@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng CSS vào HTML</title>
+</head>
+<body>
+    <div style="height: 100px; width: 1500px; padding-left: 10px;">
+        <h2 style="padding-left: 50px;">Cách 1: inline-style</h2>
+        <h1 style="width:1000px; font-size:70px; color: rgb(2, 137, 137);font-family: Georgia, 'Times New Roman', Times, serif;"><b>This is heading 1</b></h1>
+        <p style="color: blueviolet; font-size: 40px;">This is an ordinary paragraph. Notice that this text is blue. <br>
+            The default text color for a page is defined in the body selector.</p>
+    </div>
+
+    <div class="cach2">
+        <h2>Cách 2: internal-style</h2>
+        <h1><b>This is heading 1</b></h1>
+        <p>This is an ordinary paragraph. Notice that this text is blue. <br>
+            The default text color for a page is defined in the body selector.</p>
+    </div>
+    <style>
+        .cach2{
+           margin-top: 300px;
+            width: 1500px; 
+            padding-left: 10px;
+        }
+        h2{
+            padding-left: 50px;
+        }
+        h1{
+            width:1000px; 
+            font-size:70px; 
+            color: rgb(2, 137, 137);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            color: blueviolet;
+             font-size: 40px; 
+        }
+    </style>
+
+  <head> <link rel="stylesheet" href="bai_1.css"></head>
+    
+  
+    <div class="cach3">
+        <h2 id="hehe">Cách 3: external-style</h2>
+        <h1 id="hoho"><b>This is heading 1</b></h1>
+        <p id="haha">This is an ordinary paragraph. Notice that this text is blue. <br>
+            The default text color for a page is defined in the body selector.</p>
+    </div>
+</body>
+</html>
